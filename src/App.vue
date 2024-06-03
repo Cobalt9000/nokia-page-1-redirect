@@ -55,8 +55,7 @@ export default {
   height: 100vh;
   position: relative;
   overflow: hidden;
-  background-color: black;
-  z-index: -1;
+  background-color: none;
 }
 
 .bg-image {
