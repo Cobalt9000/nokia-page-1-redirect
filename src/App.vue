@@ -100,7 +100,8 @@ export default {
   text-align: center;
   font-size: 48px;
   font-weight: bold;
-  color: black;
+  color: lightblue;
+  font-style: nokkok;
 }
 
 .form-group {
