@@ -6,12 +6,16 @@
         <h2>Hey! One Last Step!</h2>
       </div>
       <form @submit.prevent="handleSubmit">
+        <div class="form-group name">
+          <label for="name">Name: </label>
+          <input type="text" id="name" v-model="formData.name" required>
+        </div>
         <div class="form-group country">
-          <label for="country">Country</label>
+          <label for="country">Country: </label>
           <input type="text" id="country" v-model="formData.country" required>
         </div>
         <div class="form-group provider">
-          <label for="provider">Provider</label>
+          <label for="provider">Provider: </label>
           <input type="text" id="provider" v-model="formData.provider" required>
         </div>
         <div class="form-group remember-me">
@@ -32,6 +36,7 @@ export default {
   data() {
     return {
       formData: {
+        name: '',
         country: '',
         provider: '',
         rememberMe: false
@@ -40,7 +45,7 @@ export default {
   },
   methods: {
     handleSubmit() {
-      console.log(this.formData)
+      window.location.href = 'https://nokia-page-2.vercel.app';
     }
   }
 }
